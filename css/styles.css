@@ -949,6 +949,10 @@ section {
         margin-bottom: var(--space-5);
     }
     
+    .hero-badges {
+        display: none;
+    }
+    
     .hero-location {
         font-size: 1rem;
         margin-bottom: var(--space-8);
@@ -1738,22 +1742,35 @@ section {
 .contact-wrapper {
     display: grid;
     grid-template-columns: 1fr;
-    gap: var(--space-10);
+    gap: var(--space-8);
     width: 100%;
     max-width: 100%;
     margin: 0 auto;
+    padding: 0 var(--space-4);
+    box-sizing: border-box;
 }
 
 .contact-form-container,
 .contact-info-container {
     background-color: var(--color-white);
-    padding: var(--space-8);
+    padding: var(--space-6);
     border-radius: var(--radius-lg);
     box-shadow: var(--shadow-md);
     width: 100%;
     max-width: 100%;
     box-sizing: border-box;
     margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+    .contact-wrapper {
+        padding: 0;
+    }
+    
+    .contact-form-container,
+    .contact-info-container {
+        padding: var(--space-8);
+    }
 }
 
 .contact-form-container h3,
