@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional home services - plumbing, electrical, and repairs. Licensed, insured, and available 24/7 for emergency services.">
+    <meta name="keywords" content="plumber, electrician, home services, emergency repair, local plumber">
+    <meta name="author" content="Premier Home Services">
+    
+    <!-- Open Graph Meta Tags for Link Previews -->
+    <meta property="og:title" content="Premier Home Services - Your Trusted Local Experts">
+    <meta property="og:description" content="Professional home services available 24/7. Licensed & insured.">
+    <meta property="og:type" content="website">
+    
+    <title>Premier Home Services - Your Trusted Local Experts</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    
+    <!-- ========== NAVIGATION BAR ========== -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-tools"></i>
+                <span id="nav-business-name">Premier Home Services</span>
+            </div>
+            
+            <!-- Desktop Menu -->
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#testimonials" class="nav-link">Reviews</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            
+            <div class="nav-cta">
+                <a href="tel:5551234567" class="nav-phone" id="nav-phone">
+                    <i class="fas fa-phone"></i>
+                    <span>(555) 123-4567</span>
+                </a>
+                <a href="#contact" class="btn btn-primary">Get Free Quote</a>
+            </div>
+            
+            <!-- Mobile Hamburger -->
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+    
+    <!-- ========== HERO SECTION ========== -->
+    <section class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="container hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span id="hero-business-name">Premier Home Services</span>
+                </h1>
+                <p class="hero-tagline">Your Trusted Local Home Service Experts</p>
+                <p class="hero-location">
+                    <i class="fas fa-map-marker-alt"></i>
+                    Serving <span id="hero-city">Your City</span> & Surrounding Areas
+                </p>
+                
+                <div class="hero-cta">
+                    <a href="tel:5551234567" class="btn btn-large btn-primary" id="hero-call-btn">
+                        <i class="fas fa-phone"></i>
+                        Call Now: <span id="hero-phone">(555) 123-4567</span>
+                    </a>
+                    <a href="#contact" class="btn btn-large btn-secondary">
+                        <i class="fas fa-file-alt"></i>
+                        Request Free Quote
+                    </a>
+                </div>
+                
+                <div class="hero-badges">
+                    <div class="badge">
+                        <i class="fas fa-certificate"></i>
+                        <span>Licensed & Insured</span>
+                    </div>
+                    <div class="badge">
+                        <i class="fas fa-clock"></i>
+                        <span>24/7 Service</span>
+                    </div>
+                    <div class="badge">
+                        <i class="fas fa-star"></i>
+                        <span id="hero-rating">5.0</span> Rating
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- ========== TRUST BAR ========== -->
+    <section class="trust-bar">
+        <div class="container trust-container">
+            <div class="trust-item">
+                <div class="trust-icon">
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="trust-text">
+                    <strong><span id="trust-rating">5.0</span> Stars</strong>
+                    <span><span id="trust-reviews">50+</span> Reviews</span>
+                </div>
+            </div>
+            
+            <div class="trust-item">
+                <div class="trust-icon">
+                    <i class="fas fa-award"></i>
+                </div>
+                <div class="trust-text">
+                    <strong><span id="trust-years">10+</span> Years</strong>
+                    <span>In Business</span>
+                </div>
+            </div>
+            
+            <div class="trust-item">
+                <div class="trust-icon">
+                    <i class="fas fa-bolt"></i>
+                </div>
+                <div class="trust-text">
+                    <strong>Same-Day</strong>
+                    <span>Service Available</span>
+                </div>
+            </div>
+            
+            <div class="trust-item">
+                <div class="trust-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <div class="trust-text">
+                    <strong>100%</strong>
+                    <span>Satisfaction Guaranteed</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- ========== SERVICES SECTION ========== -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Professional Services</h2>
+                <p class="section-subtitle">Comprehensive solutions for all your home service needs</p>
+            </div>
+            
+            <div class="services-grid" id="servicesGrid">
+                <!-- Service Card 1 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-exclamation-triangle"></i>
+                    </div>
+                    <h3 class="service-title">Emergency Repairs</h3>
+                    <p class="service-description">24/7 emergency service for urgent plumbing and electrical issues. We're here when you need us most.</p>
+                    <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <!-- Service Card 2 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3 class="service-title">Residential Services</h3>
+                    <p class="service-description">Complete home services including plumbing, electrical work, and general repairs for your residence.</p>
+                    <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <!-- Service Card 3 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3 class="service-title">Commercial Services</h3>
+                    <p class="service-description">Professional services for businesses, offices, and commercial properties. Licensed and experienced.</p>
+                    <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <!-- Service Card 4 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-wrench"></i>
+                    </div>
+                    <h3 class="service-title">Installation & Replacement</h3>
+                    <p class="service-description">Expert installation and replacement of fixtures, appliances, and systems. Quality work guaranteed.</p>
+                    <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <!-- Service Card 5 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3 class="service-title">Maintenance & Inspection</h3>
+                    <p class="service-description">Regular maintenance and thorough inspections to prevent issues and keep your systems running smoothly.</p>
+                    <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <!-- Service Card 6 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3 class="service-title">24/7 Support</h3>
+                    <p class="service-description">Round-the-clock customer support and emergency assistance. We're always just a phone call away.</p>
+                    <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- ========== WHY CHOOSE US SECTION ========== -->
+    <section class="why-choose-us" id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Why Choose <span id="why-business-name">Premier Home Services</span>?</h2>
+                <p class="section-subtitle">Experience the difference of working with true professionals</p>
+            </div>
+            
+            <div class="benefits-grid">
+                <!-- Benefit 1 -->
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3 class="benefit-title">Fast Response</h3>
+                    <p class="benefit-description">Same-day service available for most requests. We understand your time is valuable and respond quickly to all inquiries.</p>
+                </div>
+                
+                <!-- Benefit 2 -->
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                    <h3 class="benefit-title">Expert Team</h3>
+                    <p class="benefit-description">All our technicians are licensed, certified professionals with years of experience. Your project is in capable hands.</p>
+                </div>
+                
+                <!-- Benefit 3 -->
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <h3 class="benefit-title">Fair Pricing</h3>
+                    <p class="benefit-description">Transparent quotes with no hidden fees. We provide detailed estimates upfront so you know exactly what to expect.</p>
+                </div>
+                
+                <!-- Benefit 4 -->
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <h3 class="benefit-title">Quality Guaranteed</h3>
+                    <p class="benefit-description">100% satisfaction guarantee on all our work. If you're not happy, we'll make it right - that's our promise.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- ========== EMERGENCY BANNER (Conditional) ========== -->
+    <section class="emergency-banner" id="emergencyBanner" style="display: none;">
+        <div class="container emergency-container">
+            <div class="emergency-content">
+                <div class="emergency-icon">
+                    <i class="fas fa-exclamation-circle"></i>
+                </div>
+                <div class="emergency-text">
+                    <h3>24/7 Emergency Service Available</h3>
+                    <p>Don't wait! Call us now for immediate assistance</p>
+                </div>
+            </div>
+            <a href="tel:5551234567" class="btn btn-emergency" id="emergency-call-btn">
+                <i class="fas fa-phone"></i>
+                Call Now: <span id="emergency-phone">(555) 123-4567</span>
+            </a>
+        </div>
+    </section>
+    
+    <!-- ========== SERVICE AREA SECTION ========== -->
+    <section class="service-area">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Proudly Serving <span id="area-city">Your City</span> & Surrounding Areas</h2>
+                <p class="section-subtitle">Local experts you can trust</p>
+            </div>
+            
+            <div class="area-content">
+                <div class="area-icon">
+                    <i class="fas fa-map-marked-alt"></i>
+                </div>
+                <p class="area-description">
+                    We're proud to serve <span id="area-city-2">Your City</span> and the surrounding communities. 
+                    As a local business, we understand the unique needs of our neighbors and provide fast, 
+                    reliable service throughout the area.
+                </p>
+                <p class="area-coverage">
+                    <strong>Coverage includes:</strong> <span id="area-city-3">Your City</span>, nearby suburbs, 
+                    and surrounding neighborhoods. Not sure if we serve your area? Give us a call!
+                </p>
+                <a href="tel:5551234567" class="btn btn-primary">
+                    <i class="fas fa-phone"></i>
+                    Call to Check Availability
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- ========== TESTIMONIALS SECTION ========== -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">What Our Customers Say</h2>
+                <p class="section-subtitle">Don't just take our word for it - hear from our satisfied clients</p>
+            </div>
+            
+            <div class="testimonials-grid">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "Excellent service! They arrived on time and fixed the issue quickly. Very professional 
+                        and reasonably priced. I'll definitely be using them again for all my service needs."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <strong class="author-name">Sarah M.</strong>
+                            <span class="author-location"><span id="testimonial-city-1">Your City</span></span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "Called for an emergency repair and they came out the same day. Great communication, 
+                        quality work, and fair pricing. Highly recommend their services!"
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <strong class="author-name">Mike D.</strong>
+                            <span class="author-location"><span id="testimonial-city-2">Your City</span></span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "Quality work at a fair price. The technician was knowledgeable, courteous, and efficient. 
+                        Will definitely use them again and have already recommended to friends."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <strong class="author-name">Jennifer K.</strong>
+                            <span class="author-location"><span id="testimonial-city-3">Your City</span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- ========== GALLERY SECTION ========== -->
+    <section class="gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Recent Work</h2>
+                <p class="section-subtitle">Quality craftsmanship you can see</p>
+            </div>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <i class="fas fa-image"></i>
+                        <span>Before/After</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <i class="fas fa-image"></i>
+                        <span>Project Photo</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <i class="fas fa-image"></i>
+                        <span>Completed Work</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <i class="fas fa-image"></i>
+                        <span>Installation</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <i class="fas fa-image"></i>
+                        <span>Repair Work</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <i class="fas fa-image"></i>
+                        <span>Recent Project</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- ========== CONTACT SECTION ========== -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Ready to get started? Contact us today for a free quote</p>
+            </div>
+            
+            <div class="contact-wrapper">
+                <!-- Contact Form -->
+                <div class="contact-form-container">
+                    <h3>Send Us a Message</h3>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Your Name *</label>
+                            <input type="text" id="name" name="name" required placeholder="John Doe">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" required placeholder="(555) 123-4567">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="john@example.com">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Tell us about your project or what you need help with..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-block">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </button>
+                        
+                        <p class="form-privacy">We respect your privacy. Your information will never be shared.</p>
+                    </form>
+                </div>
+                
+                <!-- Contact Info -->
+                <div class="contact-info-container">
+                    <h3>Contact Information</h3>
+                    
+                    <div class="contact-info-item">
+                        <div class="contact-info-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-info-text">
+                            <strong>Phone</strong>
+                            <a href="tel:5551234567" id="contact-phone">(555) 123-4567</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-info-item">
+                        <div class="contact-info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-info-text">
+                            <strong>Email</strong>
+                            <a href="mailto:info@yourbusiness.com" id="contact-email">info@yourbusiness.com</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-info-item">
+                        <div class="contact-info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-info-text">
+                            <strong>Service Area</strong>
+                            <span id="contact-address">Serving Your City & Surrounding Areas</span>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-info-item">
+                        <div class="contact-info-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-info-text">
+                            <strong>Hours</strong>
+                            <span id="contact-hours">Mon-Fri: 8AM-6PM<br>Emergency Service: 24/7</span>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-cta">
+                        <a href="tel:5551234567" class="btn btn-primary btn-block">
+                            <i class="fas fa-phone"></i>
+                            Call Now for Free Quote
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Company Info -->
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <i class="fas fa-tools"></i>
+                        <span id="footer-business-name">Premier Home Services</span>
+                    </div>
+                    <p class="footer-tagline">Your Trusted Local Home Service Experts</p>
+                    <div class="footer-badges">
+                        <span class="footer-badge"><i class="fas fa-certificate"></i> Licensed</span>
+                        <span class="footer-badge"><i class="fas fa-shield-alt"></i> Insured</span>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#testimonials">Reviews</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Services -->
+                <div class="footer-column">
+                    <h4>Our Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="#services">Emergency Repairs</a></li>
+                        <li><a href="#services">Residential Services</a></li>
+                        <li><a href="#services">Commercial Services</a></li>
+                        <li><a href="#services">Installation & Replacement</a></li>
+                        <li><a href="#services">Maintenance</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact Info -->
+                <div class="footer-column">
+                    <h4>Contact Us</h4>
+                    <ul class="footer-contact">
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:5551234567" id="footer-phone">(555) 123-4567</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:info@yourbusiness.com" id="footer-email">info@yourbusiness.com</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span id="footer-city">Your City</span> & Surrounding Areas
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <p>&copy; 2026 <span id="footer-copyright-name">Premier Home Services</span>. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <span>|</span>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- ========== FLOATING MOBILE CTA ========== -->
+    <a href="tel:5551234567" class="floating-cta" id="floatingCta">
+        <i class="fas fa-phone"></i>
+        <span>Call Now</span>
+    </a>
+    
+    <!-- ========== BACK TO TOP BUTTON ========== -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+    
+    <!-- ========== JAVASCRIPT ========== -->
+    <script src="js/main.js"></script>
+    
+</body>
+</html>
