@@ -199,7 +199,8 @@ function initMobileNav() {
     
     if (hamburger && navMenu) {
         // Toggle menu
-        hamburger.addEventListener('click', () => {
+        hamburger.addEventListener('click', (e) => {
+            e.stopPropagation();
             hamburger.classList.toggle('active');
             navMenu.classList.toggle('active');
             document.body.style.overflow = navMenu.classList.contains('active') ? 'hidden' : '';
@@ -216,7 +217,10 @@ function initMobileNav() {
         
         // Close menu when clicking outside
         document.addEventListener('click', (e) => {
-            if (!hamburger.contains(e.target) && !navMenu.contains(e.target)) {
+            const isClickInsideMenu = navMenu.contains(e.target);
+            const isClickOnHamburger = hamburger.contains(e.target);
+            
+            if (!isClickInsideMenu && !isClickOnHamburger && navMenu.classList.contains('active')) {
                 hamburger.classList.remove('active');
                 navMenu.classList.remove('active');
                 document.body.style.overflow = '';
@@ -294,27 +298,49 @@ function initStickyNav() {
     });
 }
 
-// ========== SCROLL ANIMATIONS ==========
+// ========== 3D SCROLL ANIMATIONS ==========
 function initScrollAnimations() {
-    // Add fade-in class to elements we want to animate
-    const animatedElements = document.querySelectorAll('.service-card, .benefit-card, .testimonial-card');
+    // Add scroll animation classes to various elements
+    const scrollElements = [
+        { selector: '.service-card', animationClass: 'scroll-animate' },
+        { selector: '.benefit-card', animationClass: 'scroll-flip' },
+        { selector: '.testimonial-card', animationClass: 'scroll-scale' },
+        { selector: '.gallery-item', animationClass: 'scroll-animate' },
+        { selector: '.contact-form-container', animationClass: 'scroll-slide-left' },
+        { selector: '.contact-info-container', animationClass: 'scroll-slide-right' },
+        { selector: '.section-header', animationClass: 'scroll-flip' }
+    ];
     
+    // Add animation classes to elements
+    scrollElements.forEach(item => {
+        const elements = document.querySelectorAll(item.selector);
+        elements.forEach(el => {
+            el.classList.add(item.animationClass);
+        });
+    });
+    
+    // Intersection Observer options
     const observerOptions = {
-        threshold: 0.1,
-        rootMargin: '0px 0px -50px 0px'
+        threshold: 0.15,
+        rootMargin: '0px 0px -100px 0px'
     };
     
+    // Create observer for repeating animations
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                entry.target.classList.add('fade-in', 'visible');
-                observer.unobserve(entry.target);
+                // Add animated class to trigger animation
+                entry.target.classList.add('animated');
+            } else {
+                // Remove animated class when element exits viewport for repeating animation
+                entry.target.classList.remove('animated');
             }
         });
     }, observerOptions);
     
-    animatedElements.forEach(el => {
-        el.classList.add('fade-in');
+    // Observe all elements with scroll animation classes
+    const allAnimatedElements = document.querySelectorAll('.scroll-animate, .scroll-slide-left, .scroll-slide-right, .scroll-scale, .scroll-flip');
+    allAnimatedElements.forEach(el => {
         observer.observe(el);
     });
 }
